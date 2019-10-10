@@ -1,0 +1,18 @@
+
+dubbo:
+  application:
+    name: dubbo-server
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 20880
+  provider:
+    timeout: 10000
+    retries: 3
+    delay: -1
+spring:
+  application:
+    name: dubbo-demo-server
+server:
+  port: 18080
